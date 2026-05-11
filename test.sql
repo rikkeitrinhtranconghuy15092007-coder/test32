@@ -143,6 +143,5 @@ JOIN LiveSession ls ON c.creator_id = ls.creator_id
 GROUP BY c.creator_name
 HAVING so_session >= 2;
 
-SELECT * FROM Studio 
-WHERE hourly_price > (SELECT AVG(hourly_price) FROM Studio);
+
 
